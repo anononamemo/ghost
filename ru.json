@@ -1,136 +1,114 @@
 {
     "common": {
         "mail": {
-            "title": "Ghost at {domain}"
+            "title": "Ghost в {domain}"
         },
-        "seeLinkForInstructions": "See {link} for instructions.",
+        "seeLinkForInstructions": "Инструкции находятся по ссылке: {link}",
         "time": {
-            "seconds": "seconds"
+            "seconds": "секунд"
         },
         "api": {
             "authentication": {
-                "sampleBlogDescription": "Thoughts, stories and ideas.",
+                "sampleBlogDescription": "Переведено благодаря OpenTranslate",
                 "mail": {
-                    "resetPassword": "Reset Password",
-                    "checkEmailForInstructions": "Check your email for further instructions.",
-                    "passwordChanged": "Password changed successfully.",
-                    "invitationAccepted": "Invitation accepted.",
-                    "yourNewGhostBlog": "Your New Ghost Blog"
+                    "resetPassword": "Обновить пароль",
+                    "checkEmailForInstructions": "Проверьте свою электронную почту для получения дальнейших инструкций.",
+                    "passwordChanged": "Пароль успешно обновлен!",
+                    "invitationAccepted": "Приглашение принято.",
+                    "yourNewGhostBlog": "Ваш новый блог на Ghost."
                 }
             },
             "mail": {
-                "testGhostEmail": "Test Ghost Email"
+                "testGhostEmail": "Проверка Ghost Email"
             },
             "users": {
                 "mail": {
-                    "invitedByName": "{invitedByName} has invited you to join {blogName}"
+                    "invitedByName": "{invitedByName} пригласил вас в {blogName}"
                 }
             },
             "clients": {
-                "clientNotFound": "Client not found"
-            },
-            "actions": {
-                "images": {
-                    "upload": "upload image"
-                }
+                "clientNotFound": "Клиент не найден"
             }
         }
     },
     "errors": {
         "apps": {
             "failedToParseActiveAppsSettings": {
-                "error": "Failed to parse active_apps setting value: {message}",
-                "context": "Your apps will not be loaded.",
-                "help": "Check your settings table for typos in the active_apps value. It should look like: [\"app-1\", \"app2\"] (double quotes required)."
+                "error": "Не удалось проанализировать значение параметра active_apps: {message}",
+                "context": "Ваши приложения не могут быть загружены.",
+                "help": "Проверьте таблицу настроек в значении active_apps. Он должен выглядеть так: [\"app-1\", \"app2\"] (требуется двойная кавычка)."
             },
             "appWillNotBeLoaded": {
-                "error": "The app will not be loaded",
-                "help": "Check with the app creator, or read the app documentation for more details on app requirements"
+                "error": "Приложение не может быть загружено.",
+                "help": "Проконсультируйтесь с создателем приложения или прочитайте документацию к приложению для получения более подробной информации о требованиях к приложениям."
             },
             "permissionsErrorLoadingApp": {
-                "error": "Error loading app named {name}; problem reading permissions: {message}"
+                "error": "Произошла ошибка при загрузки приложения: {name}; Проверьте значение reading в разрешениях: {message}"
             },
             "noInstallMethodLoadingApp": {
-                "error": "Error loading app named {name}; no install() method defined."
+                "error": "Произошла ошибка при загрузки приложения: {name}; метод install() не определён."
             },
             "noActivateMethodLoadingApp": {
-                "error": "Error loading app named {name}; no activate() method defined."
+                "error": "Произошла ошибка при загрузки приложения: {name}; метод activate() не определён."
             },
             "accessResourceWithoutPermission": {
-                "error": "The App \"{name}\" attempted to perform an action or access a resource ({perm}.{method}) without permission."
+                "error": "Приложения \"{name}\" пыталась произвести действие или получить доступ к ресурсу: ({perm}.{method}) без разрешения."
             },
             "mustProvideAppName": {
-                "error": "Must provide an app name for api context"
+                "error": "Должно быть указано имя приложения для API"
             },
             "mustProvideAppPermissions": {
-                "error": "Must provide app permissions"
+                "error": "Должен обеспечить разрешения для приложения."
             },
             "unsafeAppRequire": {
-                "error": "Unsafe App require: {msg}"
+                "error": "Небезопасное приложение требует: {msg}"
             }
         },
         "middleware": {
             "api": {
-                "versionMismatch": "Client request for {clientVersion} does not match server version {serverVersion}."
+                "versionMismatch": "Запрос клиента для {clientVersion} не соответствует версии сервера {serverVersion}."
             },
             "auth": {
-                "publicAPIDisabled": {
-                    "error": "Permission error! Public API is disabled.",
-                    "context": "Please enable the deprecated v0.1 Public API or switch to using the v2 Content API."
-                },
-                "clientAuthenticationFailed": "Client Authentication Failed",
-                "clientCredentialsNotProvided": "Client credentials were not provided",
-                "clientCredentialsNotValid": "Client credentials were not valid",
-                "forInformationRead": "For information on how to fix this, please read {url}.",
-                "unknownOrigin": "Could not determine origin of request. Please ensure an Origin or Referrer header is present.",
-                "mismatchedOrigin": "Request made from incorrect origin. Expected '{expected}' received '{actual}'.",
-                "missingUserIDForSession": "Cannot create session without user id.",
-                "accessDenied": "Access denied.",
-                "pleaseSignIn": "Please Sign In",
-                "authorizationFailed": "Authorization failed",
-                "missingContentMemberOrIntegration": "Unable to determine the authenticated member or integration. Check the supplied Content API Key and ensure cookies are being passed through if member auth is failing.",
-                "missingAdminUserOrIntegration": "Unable to determine the authenticated user or integration. Check that cookies are being passed through if using session authentication.",
-                "adminApiKeyMissing": "Admin API Token missing kid header claim.",
-                "unknownAdminApiKey": "Unknown Admin API Key",
-                "unknownContentApiKey": "Unknown Content API Key",
-                "invalidApiKeyType": "Invalid API Key type",
-                "invalidToken": "Invalid token",
-                "invalidTokenWithMessage": "Invalid token: {message}",
-                "incorrectAuthHeaderFormat": "Authorization header format is \"Authorization: Ghost [token]\""
+                "clientAuthenticationFailed": "Ошибка при аутентификации клиента.",
+                "clientCredentialsNotProvided": "Учетные данные пользователя не были предоставлены.",
+                "clientCredentialsNotValid": "Учетные данные пользователя недействительны.",
+                "forInformationRead": "Для получения информации о том, как исправить это, прочитайте {url}.",
+                "accessDenied": "Доступ закрыт.",
+                "pleaseSignIn": "Пожалуйста авторизуйтесь"
             },
             "oauth": {
-                "invalidClient": "Invalid client.",
-                "invalidRefreshToken": "Invalid refresh token.",
-                "refreshTokenExpired": "Refresh token expired."
+                "invalidClient": "Недействительный пользователя",
+                "invalidRefreshToken": "Недопустимый токен обновления.",
+                "refreshTokenExpired": "Токен обновлен."
             },
             "privateblogging": {
-                "wrongPassword": "Wrong password"
+                "wrongPassword": "Неправильный пароль"
             },
             "spamprevention": {
-                "tooManyAttempts": "Too many attempts.",
-                "noUsername": "No username.",
-                "noPassword": "No password entered",
+                "tooManyAttempts": "Слишком много попыток.",
+                "noUsername": "Введите имя пользователя.",
+                "noPassword": "Введите пароль.",
                 "tooManySigninAttempts": {
-                    "error": "Only {rateSigninAttempts} tries per IP address every {rateSigninPeriod} seconds.",
-                    "context": "Too many login attempts."
+                    "error": "Только {rateSigninAttempts} проверяет каждый IP-адрес каждые {rateSigninPeriod} секунд.",
+                    "context": "Слишком много попыток входа в систему."
                 },
-                "tryAgainLater": " Please try again later",
-                "waitOneHour": " Please wait 1 hour.",
-                "noEmail": "No email.",
+                "tryAgainLater": " Попробуйте позже",
+                "waitOneHour": " Попробуйте через 1 час.",
+                "noEmail": "Введите email.",
                 "forgottenPasswordEmail": {
                     "error": "Only {rfa} forgotten password attempts per email every {rfp} seconds.",
-                    "context": "Forgotten password reset attempt failed"
+                    "context": "Ошибка попытки сброса пароля."
                 },
                 "forgottenPasswordIp": {
                     "error": "Only {rfa} tries per IP address every {rfp} seconds.",
-                    "context": "Forgotten password reset attempt failed"
+                    "context": "Ошибка попытки сброса пароля"
                 }
             },
             "themehandler": {
-                "missingTheme": "The currently active theme \"{theme}\" is missing.",
-                "invalidTheme": "The currently active theme \"{theme}\" is invalid.",
-                "themeHasErrors": "The currently active theme \"{theme}\" has errors, but will still work.",
-                "activateFailed": "Unable to activate the theme \"{theme}\"."
+                "missingTheme": "Активная тема: \"{theme}\" не найдена.",
+                "invalidTheme": "Активная тема: \"{theme}\" является недействительным.",
+                "themeHasErrors": "Активная тема: \"{theme}\" имеет ошибки, но способна работать.",
+                "activateFailed": "Невозможно активировать тему: \"{theme}\"."
             },
             "redirects": {
                 "register": "Could not register custom redirects."
@@ -138,50 +116,47 @@
         },
         "utils": {
             "parsepackagejson": {
-                "couldNotReadPackage": "Could not read package.json file",
-                "nameOrVersionMissing": "\"name\" or \"version\" is missing from theme package.json file.",
-                "willBeRequired": "This will be required in future. Please see {url}",
-                "themeFileIsMalformed": "Theme package.json file is malformed"
+                "couldNotReadPackage": "Не могу прочитать файл package.json",
+                "nameOrVersionMissing": "\"name\" или \"version\" отсутствует в файле темы package.json.",
+                "willBeRequired": "Это будет необходимо в будущем. Пожалуйста, смотрите: {url}",
+                "themeFileIsMalformed": "Файл package.json данной темы поврежден"
             },
             "blogIcon": {
-                "error": "Could not fetch icon dimensions."
+                "error": "Не удалось получить размеры значков(иконок)."
             },
-            "images": {
-                "invalidDimensions": "Could not fetch image dimensions."
-            },
-            "redirectsWrongFormat": "Incorrect redirects file format."
+            "redirectsWrongFormat": "Неправильный формат файла перенаправлений."
         },
         "config": {
             "couldNotLocateConfigFile": {
-                "error": "Could not locate a configuration file.",
-                "help": "Please check your deployment for config.js or config.example.js."
+                "error": "Не удалось найти файл конфигурации.",
+                "help": "Проверьте config.js или config.example.js."
             },
             "couldNotOpenForReading": {
-                "error": "Could not open {file} for read.",
-                "help": "Please check your deployment for config.js or config.example.js."
+                "error": "Не удалось открыть {file} для чтения.",
+                "help": "Проверьте config.js или config.example.js."
             },
             "couldNotOpenForWriting": {
-                "error": "Could not open {file} for write.",
-                "help": "Please check your deployment for config.js or config.example.js."
+                "error": "Не удалось открыть {file} для записи.",
+                "help": "Проверьте config.js или config.example.js."
             },
             "invalidUrlInConfig": {
-                "error": "invalid site url",
-                "description": "Your site url in config.js is invalid.",
-                "help": "Please make sure this is a valid url before restarting"
+                "error": "неверный url сайта",
+                "description": "URL вашего сайта в config.js недействителен.",
+                "help": "Пожалуйста, убедитесь, что это правильный URL-адрес перед перезапуском"
             },
             "urlCannotContainGhostSubdir": {
-                "error": "ghost subdirectory not allowed",
-                "description": "Your site url in config.js cannot contain a subdirectory called ghost.",
-                "help": "Please rename the subdirectory before restarting"
+                "error": "подкаталог ghost не разрешен",
+                "description": "URL вашего сайта в config.js не может содержать подкаталог с именем ghost.",
+                "help": "Пожалуйста, переименуйте подкаталог перед перезапуском"
             },
             "urlCannotContainPrivateSubdir": {
-                "error": "private subdirectory not allowed",
-                "description": "Your site url in config.js cannot contain a subdirectory called private.",
-                "help": "Please rename the subdirectory before restarting"
+                "error": "закрытый подкаталог запрещен",
+                "description": "URL вашего сайта в config.js не может содержать подкаталог с именем private.",
+                "help": "Пожалуйста, переименуйте подкаталог перед перезапуском"
             },
             "dbConfigInvalid": {
-                "error": "invalid database configuration",
-                "description": "Your database configuration in config.js is invalid.",
+                "error": "неверная конфигурация базы данных",
+                "description": "Ваша конфигурация базы данных в config.js неверна.",
                 "help": "Please make sure this is a valid Bookshelf database configuration"
             },
             "deprecatedProperty": {
@@ -196,8 +171,8 @@
             }
         },
         "general": {
-            "maintenance": "Site is currently undergoing maintenance, please wait a moment then retry.",
-            "maintenanceUrlService": "Site is starting up, please wait a moment then retry.",
+            "maintenance": "Ghost is currently undergoing maintenance, please wait a moment then retry.",
+            "maintenanceUrlService": "Ghost is starting up, please wait a moment then retry.",
             "requiredOnFuture": "This will be required in future. Please see {link}",
             "internalError": "Something went wrong.",
             "jsonParse": "Could not parse JSON: {context}."
@@ -227,13 +202,7 @@
             "reason": " Reason: {reason}."
         },
         "models": {
-            "general": {
-                "sql": "Could not understand request."
-            },
             "subscriber": {
-                "notEnoughPermission": "You do not have permission to perform this action"
-            },
-            "invite": {
                 "notEnoughPermission": "You do not have permission to perform this action"
             },
             "post": {
@@ -285,9 +254,6 @@
                 "onlyOwnerCanTransferOwnerRole": "Only owners are able to transfer the owner role.",
                 "onlyAdmCanBeAssignedOwnerRole": "Only administrators can be assigned the owner role."
             },
-            "api_key": {
-                "apiKeyNotFound": "API Key not found"
-            },
             "base": {
                 "index": {
                     "missingContext": "missing context"
@@ -325,8 +291,7 @@
         },
         "api": {
             "common": {
-                "invalidTokenStructure": "Invalid token structure",
-                "notImplemented": "The server does not support the functionality required to fulfill the request."
+                "invalidTokenStructure": "Invalid token structure"
             },
             "authentication": {
                 "setupUnableToRun": "Database missing fixture data. Please reset database and try again.",
@@ -371,12 +336,6 @@
             "posts": {
                 "postNotFound": "Post not found."
             },
-            "authors": {
-                "notFound": "Author not found."
-            },
-            "pages": {
-                "pageNotFound": "Page not found."
-            },
             "job": {
                 "notFound": "Job not found.",
                 "publishInThePast": "Use the force flag to publish a post in the past."
@@ -384,13 +343,6 @@
             "redirects": {
                 "missingFile": "Please select a JSON file.",
                 "invalidFile": "Please select a valid JSON file to import."
-            },
-            "resource": {
-                "resourceNotFound": "{resource} not found."
-            },
-            "routes": {
-                "missingFile": "Please select a YAML file.",
-                "invalidFile": "Please select a valid YAML file to import."
             },
             "settings": {
                 "problemFindingSetting": "Problem finding setting: {key}",
@@ -415,10 +367,6 @@
                 "subscriberNotFound": "Subscriber not found.",
                 "subscriberAlreadyExists": "Email address is already subscribed."
             },
-            "members": {
-                "memberNotFound": "Member not found.",
-                "memberAlreadyExists": "Email address is already member."
-            },
             "tags": {
                 "tagNotFound": "Tag not found."
             },
@@ -436,8 +384,7 @@
             },
             "images": {
                 "missingFile": "Please select an image.",
-                "invalidFile": "Please select a valid image.",
-                "isNotSquare": "Please select a valid image file with square dimensions."
+                "invalidFile": "Please select a valid image."
             },
             "icons": {
                 "missingFile": "Please select an icon.",
@@ -476,34 +423,11 @@
                 "notAllowedToInvite": "Not allowed to invite this role."
             },
             "webhooks": {
-                "webhookAlreadyExists": "Target URL has already been used for this event."
+                "webhookAlreadyExists": "A webhook for requested event with supplied target_url already exists."
             },
             "oembed": {
                 "noUrlProvided": "No url provided.",
                 "unknownProvider": "No provider found for supplied URL."
-            },
-            "userMessages": {
-                "InternalServerError": "Internal server error, cannot {action}.",
-                "IncorrectUsageError": "Incorrect usage error, cannot {action}.",
-                "NotFoundError": "Resource not found error, cannot {action}.",
-                "BadRequestError": "Request not understood error, cannot {action}.",
-                "UnauthorizedError": "Authorisation error, cannot {action}.",
-                "NoPermissionError": "Permission error, cannot {action}.",
-                "ValidationError": "Validation error, cannot {action}.",
-                "UnsupportedMediaTypeError": "Unsupported media error, cannot {action}.",
-                "TooManyRequestsError": "Too many requests error, cannot {action}.",
-                "MaintenanceError": "Server down for maintenance, cannot {action}.",
-                "MethodNotAllowedError": "Method not allowed, cannot {action}.",
-                "RequestEntityTooLargeError": "Request too large, cannot {action}.",
-                "TokenRevocationError": "Token is not available, cannot {action}.",
-                "VersionMismatchError": "Version mismatch error, cannot {action}.",
-                "DataExportError": "Error exporting content.",
-                "DataImportError": "Duplicated entry, cannot save {action}.",
-                "DatabaseVersionError": "Database version compatibility error, cannot {action}.",
-                "EmailError": "Error sending email!",
-                "ThemeValidationError": "Theme validation error, cannot {action}.",
-                "DisabledFeatureError": "Theme validation error, the {{{helperName}}} helper is not available. Cannot {action}.",
-                "UpdateCollisionError": "Saving failed! Someone else is editing this post."
             }
         },
         "data": {
@@ -599,11 +523,7 @@
                 "iteratorNeeded": "Need to pass an iterator to #foreach"
             },
             "get": {
-                "invalidResource": "Invalid resource given to get helper",
-                "apiRequired": {
-                    "message": "The \\{\\{#get\\}\\} helper requires your theme to have API access.",
-                    "context": "Please enable the v2 API via your theme's package.json file."
-                }
+                "invalidResource": "Invalid resource given to get helper"
             },
             "has": {
                 "invalidAttribute": "Invalid or no attribute given to has helper"
@@ -623,68 +543,67 @@
                 "isDeprecated": "Warning: pageUrl is deprecated, please use page_url instead\nThe helper pageUrl has been replaced with page_url in Ghost 0.4.2, and will be removed entirely in Ghost 0.6\nIn your theme's pagination.hbs file, pageUrl should be renamed to page_url"
             },
             "pagination": {
-                "invalidData": "The \\{\\{pagination\\}\\} helper was used outside of a paginated context. See https://docs.ghost.org/api/handlebars-themes/helpers/pagination/.",
+                "invalidData": "The \\{\\{pagination\\}\\} helper was used outside of a paginated context. See https://themes.ghost.org/v1.23.0/docs/pagination.",
                 "valuesMustBeDefined": "All values must be defined for page, pages, limit and total",
                 "nextPrevValuesMustBeNumeric": "Invalid value, Next/Prev must be a number",
                 "valuesMustBeNumeric": "Invalid value, check page, pages, limit and total are numbers"
             },
             "plural": {
-                "valuesMustBeDefined": "All values must be defined for empty, singular and plural"
+                "valuesMustBeDefined": "Все значения должны быть определены для пустых, единственного и множественного числа"
             },
             "img_url": {
-                "attrIsRequired": "Attribute is required e.g. \\{\\{img_url feature_image\\}\\}",
-                "attrIsUnknown": "Attribute passed to \\{\\{img_url\\}\\} is unknown"
+                "attrIsRequired": "Требуется атрибут, например \\{\\{img_url feature_image\\}\\}",
+                "attrIsUnknown": "Переданный атрибут \\{\\{img_url\\}\\} неизвестна"
             },
             "template": {
-                "templateNotFound": "Template {name} not found."
+                "templateNotFound": "Шаблон {name} не найден."
             }
         }
     },
     "notices": {
         "index": {
-            "welcomeToGhost": "Welcome to Ghost."
+            "welcomeToGhost": "Добро пожаловать в Ghost."
         },
         "httpServer": {
-            "cantTouchThis": "Can't touch this",
-            "ghostIsRunning": "Ghost is running...",
-            "yourBlogIsAvailableOn": "Your blog is now available on {url}",
-            "ctrlCToShutDown": "Ctrl+C to shut down",
-            "ghostIsRunningIn": "Ghost is running in {env}...",
-            "listeningOn": "Listening on: {host}:{port}",
-            "urlConfiguredAs": "Url configured as: {url}",
+            "cantTouchThis": "Не могу получить доступ",
+            "ghostIsRunning": "Ghost запускается...",
+            "yourBlogIsAvailableOn": "Ваш блог запущен по адресу: {url}",
+            "ctrlCToShutDown": "Ctrl+C для того что-бы выключить",
+            "ghostIsRunningIn": "Ghost запущен {env}...",
+            "listeningOn": "Слушает: {host}:{port}",
+            "urlConfiguredAs": "Url настроен: {url}",
             "ghostHasShutdown": "Ghost has shut down",
-            "yourBlogIsNowOffline": "Your blog is now offline",
-            "ghostWasRunningFor": "Ghost was running for",
-            "ghostIsClosingConnections": "Ghost is closing connections"
+            "yourBlogIsNowOffline": "Ваш блог выключен",
+            "ghostWasRunningFor": "Ghost был запущен для",
+            "ghostIsClosingConnections": "Закрыт соединение для Ghost"
         },
         "mail": {
-            "messageSent": "Message sent. Double check inbox and spam folder!"
+            "messageSent": "Сообщение отрпавлено. Дважды проверьте папку «Входящие» и «Спам»!"
         },
         "api": {
             "users": {
-                "pwdChangedSuccessfully": "Password changed successfully."
+                "pwdChangedSuccessfully": "Пароль успешно изменён."
             }
         },
         "data": {
             "fixtures": {
-                "jQueryRemoved": "jQuery has been removed from Ghost core and is now being loaded from the jQuery Foundation's CDN."
+                "jQueryRemoved": "jQuery был удален из ядра Ghost и теперь загружается из CDN jQuery Foundation."
             },
             "utils": {
                 "index": {
-                    "noSupportForDatabase": "No support for database client {client}"
+                    "noSupportForDatabase": "Нет поддержки для клиента базы данных {client}"
                 }
             },
             "validation": {
                 "index": {
-                    "valueCannotBeBlank": "Value in [{tableName}.{columnKey}] cannot be blank.",
-                    "valueMustBeBoolean": "Value in [{tableName}.{columnKey}] must be one of true, false, 0 or 1.",
-                    "valueExceedsMaxLength": "Value in [{tableName}.{columnKey}] exceeds maximum length of {maxlength} characters.",
-                    "valueIsNotInteger": "Value in [{tableName}.{columnKey}] is not an integer.",
-                    "themeCannotBeActivated": "{themeName} cannot be activated because it is not currently installed.",
-                    "validationFailed": "Validation ({validationName}) failed for {key}",
-                    "schemaValidationFailed": "Validation failed for '{key}'",
+                    "valueCannotBeBlank": "Значение в [{tableName}.{columnKey}] не может быть пустым.",
+                    "valueMustBeBoolean": "Значение в [{tableName}.{columnKey}] может быть true, false, 0 или 1.",
+                    "valueExceedsMaxLength": "Значение в [{tableName}.{columnKey}] привышает максимальную длинну({maxlength}) символов.",
+                    "valueIsNotInteger": "Значение в [{tableName}.{columnKey}] не целое число.",
+                    "themeCannotBeActivated": "{themeName} перед активацией, установите ёё",
+                    "validationFailed": "Проверка ({validationName}) завершилась неудачно для {key}",
                     "validationFailedTypes": {
-                        "isLength": "Value in [{tableName}.{key}] exceeds maximum length of {max} characters."
+                        "isLength": "Значение в [{tableName}.{key}] привышает максимальную длинну({max}) символов."
                     }
                 }
             }
